@@ -9,8 +9,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "./src/components/index.ts"),
-      name: 'mul-ui',
-      fileName: (format) => `mul-ui.${format}.js`
+      name: 'lan-ui',
+      fileName: (format) => `lan-ui.${format}.js`
     },
     rollupOptions: {
       external: ['vue'],
@@ -22,10 +22,9 @@ export default defineConfig({
     }
   },
   resolve: {
-      alias: [
-        { find: '@', replacement: pathResolve('src') },
-        { find: 'public', replacement: pathResolve('public') }
-      ]
+      alias: {
+        '@': path.resolve(__dirname, 'src'),
+      }
     },
     css: {
       preprocessorOptions: {
