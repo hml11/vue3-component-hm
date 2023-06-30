@@ -1,2 +1,1 @@
-# vue3-component-hm
-vue3组件
+# Vue 3 + TypeScript + Vite
