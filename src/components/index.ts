@@ -1,12 +1,12 @@
-import Dialog from './Dialog'
+import WorkFlow from './WorkFlow'
+import Icon from './Icon'
 
-const components = [Dialog]
+const components = [WorkFlow, Icon]
 
 const LanUI = {
   install(App: any) {
     components.forEach(component => {
-      console.log('component', component)
-      App.component(component.name, component)
+      App.component('V' + component.name, component)
     })
   }
 }

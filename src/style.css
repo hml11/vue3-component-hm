@@ -23,12 +23,12 @@ a:hover {
   color: #535bf2;
 }
 
+html,
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-color: #f9f9f9;
 }
 
 h1 {
@@ -60,10 +60,36 @@ button:focus-visible {
 }
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: Chinese Quote;
+  src: local("PingFang SC"), local("SimSun");
+  unicode-range: u+2018, u+2019, u+201c, u+201d;
+}
+
+@font-face {
+  font-family: anticon;
+  font-display: fallback;
+  src: url("https://at.alicdn.com/t/font_148784_v4ggb6wrjmkotj4i.eot");
+  src: url("https://at.alicdn.com/t/font_148784_v4ggb6wrjmkotj4i.woff")
+      format("woff"),
+    url("https://at.alicdn.com/t/font_148784_v4ggb6wrjmkotj4i.ttf")
+      format("truetype"),
+    url("https://at.alicdn.com/t/font_148784_v4ggb6wrjmkotj4i.svg#iconfont")
+      format("svg");
+}
+
+@font-face {
+  font-family: IconFont;
+  src: url("//at.alicdn.com/t/font_135284_ph2thxxbzgf.eot");
+  src: url("//at.alicdn.com/t/font_135284_ph2thxxbzgf.eot?#iefix")
+      format("embedded-opentype"),
+    url("//at.alicdn.com/t/font_135284_ph2thxxbzgf.woff") format("woff"),
+    url("//at.alicdn.com/t/font_135284_ph2thxxbzgf.ttf") format("truetype"),
+    url("//at.alicdn.com/t/font_135284_ph2thxxbzgf.svg#IconFont") format("svg");
 }
 
 @media (prefers-color-scheme: light) {
